@@ -20,7 +20,7 @@
 		die( print_r( sqlsrv_errors(), true));
 	}
 
-	$sql = "INSERT INTO customer (Name, Email, Job) VALUES (?, ?, ?)";
+	$sql = "INSERT INTO kevsub1 (Name, Email, Job) VALUES (?, ?, ?)";
 	$params = array($_POST["txtName"], $_POST["txtEmail"], $_POST["txtJob"]);
 
 	$stmt = sqlsrv_query( $conn, $sql, $params);
