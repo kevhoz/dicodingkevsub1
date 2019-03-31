@@ -32,7 +32,7 @@
 		echo "Record add successfully";
 	}
 	
-	$stmt2 = "SELECT * FROM customer";
+	$stmt2 = "SELECT * FROM kevsub1";
    	$query = sqlsrv_query($conn, $stmt2);
 ?>
 <table width="600" border="1">
