@@ -31,9 +31,33 @@
 	{
 		echo "Record add successfully";
 	}
-
-	sqlsrv_close($conn);
+	
+	$stmt2 = "SELECT * FROM customer";
+   	$query = sqlsrv_query($conn, $stmt2);
 ?>
+<table width="600" border="1">
+  <tr>
+    <th width="200"> <div align="center">Name </div></th>
+    <th width="200"> <div align="center">Email </div></th>
+    <th width="100"> <div align="center">Job </div></th>
+  </tr>
+<?php
+while($result = sqlsrv_fetch_array($query, SQLSRV_FETCH_ASSOC))
+{
+?>
+  <tr>
+    <td><?php echo $result["Name"];?></td>
+    <td><?php echo $result["Email"];?></td>	  
+    <td><?php echo $result["Job"];?></td>
+  </tr>
+<?php
+}
+?>
+</table>
+<?php
+sqlsrv_close($conn);
+?>
+</body>
 <form action="https://dicodingkevsubs1web.azurewebsites.net">
 	<input type="submit" value="Back to Form" />
 </form>
