@@ -10,7 +10,7 @@
 	$serverName = "dicodingkevsub1.database.windows.net";
 	$userName = "kevhoz";
 	$userPassword = 'Zxcasdqwe123';
-	$dbName = "kevsub1";
+	$dbName = "dicodingkevsub1";
 
 	$connectionInfo = array("Database"=>$dbName, "UID"=>$userName, "PWD"=>$userPassword, "MultipleActiveResultSets"=>true);
 
