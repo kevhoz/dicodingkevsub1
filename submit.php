@@ -30,7 +30,9 @@
 	else
 	{
 		echo "Record add successfully";
-		<button onclick="window.location.href = 'https://dicodingkevsubs1web.azurewebsites.net';">Back to Form</button>
+		<form>
+		<input class="BackButton" type="button" value="Back to Form" onclick="window.location.href='https://dicodingkevsubs1web.azurewebsites.net'" />
+		</form>
 	}
 
 	sqlsrv_close($conn);
